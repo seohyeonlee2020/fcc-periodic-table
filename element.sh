@@ -29,7 +29,7 @@ INPUT_SEARCH=$($PSQL "SELECT * FROM elements LEFT JOIN properties USING (atomic_
   #echo $PROCESSED type $TYPE
   #echo test value: $INPUT_SEARCH processed ${ARR[2]}
   #The element with atomic number 1 is Hydrogen (H). It's a nonmetal, with a mass of 1.008 amu. Hydrogen has a melting point of -259.1 celsius and a boiling point of -252.9 celsius.
-  echo "The element with atomic number ${ARR[0]} is ${ARR[1]} (${ARR[2]}). It's a $TYPE, with a mass of ${ARR[3]} amu. ${ARR[1]} has a melting point of ${ARR[4]} celsius and a boiling point of ${ARR[5]} celsius."
+  echo "The element with atomic number ${ARR[0]} is ${ARR[2]} (${ARR[1]}). It's a $TYPE, with a mass of ${ARR[3]} amu. ${ARR[2]} has a melting point of ${ARR[4]} celsius and a boiling point of ${ARR[5]} celsius."
   else
   #if no matches
   echo "I could not find that element in the database."
